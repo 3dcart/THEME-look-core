@@ -17,7 +17,21 @@ body {
 footer {
   flex-shrink: 0;
 }
-
+.homepage-blog-posts .post-image-container img {
+    height: 226px;
+}
+.product-items.productList .product-item .img a,
+.product-items.productList .product-item .img img{
+    position: initial;
+}
+.product-items.productList .product-item .img {
+    border: 1px solid #ececec;
+}
+@media (max-width: 991px){
+.product-items.productList .product-item .img {
+    width: 32%;
+}
+}
 body {
     /*font-family: Arial,Helvetica Neue,Helvetica,sans-serif;*/
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
