@@ -737,13 +737,6 @@ span.freeshipping {
     border: 0px solid #003399;
     background-color: transparent;
 }
-#home > .products-section .product-item .img {
-    max-height: 425px;
-	padding-top:425px;
-}
-#modTopSellers .product-item {
-    margin-bottom: 20px;
-}
 .product-item .img a {
     display: block;
 }
