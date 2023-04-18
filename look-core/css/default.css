@@ -1,15 +1,16 @@
 /*
 ** Bootstrap over-rides
 */
-html, body {
-  /*height: 100%;*/
-}
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 body {
   display: flex;
   height: 100%;
   flex-direction: column;
 	min-height: 100vh;
+}
+.antiCls { 
+    visibility: hidden; 
 }
 #skip a
 {
@@ -513,7 +514,7 @@ ul.extrapages li a {
     float: right;
     margin-bottom: 25px;
 }
-.mailist-box h3 {
+.mailist-box h2 {
     margin: 0 0 15px;
 	font-family: 'Playfair Display', serif;
     font-size: 18px;
@@ -623,7 +624,7 @@ ul.social-icons li.social-icons-label {
         margin: 20px auto;
     }
 }
-.social-icons h3 {
+.social-icons h2 {
     margin: 0 0 15px;
 	font-family: 'Playfair Display', serif;
     font-size: 18px;
