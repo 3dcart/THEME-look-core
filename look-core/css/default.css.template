@@ -12,6 +12,11 @@ body {
 .antiCls { 
     visibility: hidden; 
 }
+@media (max-width: 767px) {
+	.antiCls-xs { 
+		visibility: hidden; 
+	}
+}
 #skip a
 {
 position:absolute;

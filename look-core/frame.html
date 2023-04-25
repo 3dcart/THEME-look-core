@@ -356,7 +356,7 @@
 	
 	<!--START: page_scripts-->
 	<script src="assets/templates/common-core/lib/jquery.min.js"></script>
-	<script src="assets/templates/common-core/lib/jquery-migrate-3.0.1.min.js"></script>
+	<script src="assets/templates/common-core/lib/jquery-migrate-3.0.1.min.js" defer="defer"></script>
 	<script src="assets/templates/common-core/lib/bootstrap/js/bootstrap.js" defer="defer"></script>
 	<script src="assets/templates/common-core/js/core.js" defer="defer"></script>
 	<script src="assets/templates/[template]/js/main.js" defer="defer"></script>
@@ -364,8 +364,22 @@
 	<!--END: page_scripts-->
 
     <!--START: quicksearch-->
-    <link rel="stylesheet" href="assets/templates/common-html5/quicksearch/quicksearch.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="assets/templates/common-html5/quicksearch/jquery.quicksearch.js"></script>
+    <link
+        rel="preload stylesheet"
+        href="assets/templates/common-core/quicksearch/quicksearch.css"
+        as="style"
+		media="screen"
+        onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+        <link
+            href="assets/templates/common-core/quicksearch/quicksearch.css"
+            rel="stylesheet"
+            type="text/css"
+			media="screen"
+        />
+    </noscript>
+    <script type="text/javascript" src="assets/templates/common-html5/quicksearch/jquery.quicksearch.js" defer="defer"></script>
     <script type="text/javascript">
         jQuery(function () {
             jQuery('#searchlight').searchlight('/search_quick.asp');
