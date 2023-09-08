@@ -17,6 +17,7 @@ body {
 		visibility: hidden; 
 	}
 }
+.searchHide{display:none !important}
 #skip a
 {
 position:absolute;
